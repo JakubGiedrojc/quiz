@@ -23,6 +23,7 @@ public class StartupRunner implements CommandLineRunner {
     public void run(String...args) throws Exception {
         log.info("Executing startup actions...");
         quickDataService.getQuizCategories();
+        //quickDataService.getQuizQuestions();
         /*playerEntityRepository.save(new PlayerEntity("John"));
         playerEntityRepository.save(new PlayerEntity("Harry"));
         playerEntityRepository.save(new PlayerEntity("George"));
